@@ -1,0 +1,666 @@
+Started GET "/" for ::1 at 2020-12-20 23:36:47 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "rails-basics_development" does not exist
+):
+  
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.4.4) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-20 23:45:59 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sagar/.rvm/gems/ruby-2.6.5/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sagar/.rvm/gems/ruby-2.6.5/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:49:23 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 766ms (Views: 764.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:51:23 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:51:25 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:51:43 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 344ms (Views: 337.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:51:51 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-20 23:55:30 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-21 00:04:30 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test/index" for ::1 at 2020-12-21 00:04:40 +0530
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (58.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210108030826)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying(25), "last_name" character varying(25), "email" character varying DEFAULT '' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210108030826_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030826"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to TestMigration (20210108030949)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030949"]]
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (12.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-08 03:23:23.441917"], ["updated_at", "2021-01-08 03:23:23.441917"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeUsers (20210112015335)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (34.3ms)[0m  [1m[35mALTER TABLE "users" RENAME TO "admin_users"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (3.1ms)[0m  [1m[35mALTER INDEX "users_pkey" RENAME TO "admin_users_pkey"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "public"."users_id_seq" RENAME TO "admin_users_id_seq"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (9.5ms)[0m  [1m[35mALTER TABLE "admin_users" ADD "username" character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:4
+  [1m[35m (24.4ms)[0m  [1m[35mALTER TABLE "admin_users" ALTER COLUMN "email" TYPE character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:5
+  [1m[35m (18.0ms)[0m  [1m[35mCREATE  INDEX  "index_admin_users_on_username" ON "admin_users"  ("username")[0m
+  ↳ db/migrate/20210112015335_change_users.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210112015335"]]
+  ↳ bin/rails:9
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (20.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeUsers (20210112015335)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (18.4ms)[0m  [1m[35mDROP INDEX  "index_admin_users_on_username"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:10
+  [1m[35m (11.9ms)[0m  [1m[35mALTER TABLE "admin_users" ALTER COLUMN "email" TYPE character varying, ALTER COLUMN "email" SET DEFAULT '', ALTER COLUMN "email" SET NOT NULL[0m
+  ↳ db/migrate/20210112015335_change_users.rb:11
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "admin_users" DROP COLUMN "username"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "admin_users" RENAME TO "users"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mALTER INDEX "admin_users_pkey" RENAME TO "users_pkey"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "public"."admin_users_id_seq" RENAME TO "users_id_seq"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Destroy (25.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210112015335"]]
+  ↳ bin/rails:9
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to TestMigration (20210108030949)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210108030949"]]
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210108030826)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (27.3ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20210108030826_create_users.rb:15
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210108030826"]]
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+Migrating to CreateUsers (20210108030826)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (42.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying(25), "last_name" character varying(25), "email" character varying DEFAULT '' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210108030826_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030826"]]
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+Migrating to TestMigration (20210108030949)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030949"]]
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+Migrating to ChangeUsers (20210112015335)
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" RENAME TO "admin_users"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER INDEX "users_pkey" RENAME TO "admin_users_pkey"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "public"."users_id_seq" RENAME TO "admin_users_id_seq"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "admin_users" ADD "username" character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:4
+  [1m[35m (14.4ms)[0m  [1m[35mALTER TABLE "admin_users" ALTER COLUMN "email" TYPE character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:5
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_admin_users_on_username" ON "admin_users"  ("username")[0m
+  ↳ db/migrate/20210112015335_change_users.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210112015335"]]
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20210113020645)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (58.2ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020645_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020645"]]
+  ↳ bin/rails:9
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_subject_id" ON "pages"  ("subject_id")[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:11
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_subject_id" ON "pages"  ("subject_id")[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_subject_id" ON "pages"  ("subject_id")[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (22.9ms)[0m  [1m[35mCREATE TABLE "pages" ("id" bigserial primary key, "subject_id" integer, "name" character varying, "perma_link" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020709"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSections (20210113020730)
+  [1m[35m (12.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (17.8ms)[0m  [1m[35mCREATE TABLE "sections" ("id" bigserial primary key, "page_id" integer, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "content-type" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020730_create_sections.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020730"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (27.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSections (20210113020730)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (31.3ms)[0m  [1m[35mDROP TABLE "sections"[0m
+  ↳ db/migrate/20210113020730_create_sections.rb:18
+  [1m[36mActiveRecord::SchemaMigration Destroy (24.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113020730"]]
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "pages"[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:17
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113020709"]]
+  ↳ bin/rails:9
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20210113020645)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "subjects"[0m
+  ↳ db/migrate/20210113020645_create_subjects.rb:12
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113020645"]]
+  ↳ bin/rails:9
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to ChangeUsers (20210112015335)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP INDEX  "index_admin_users_on_username"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:10
+  [1m[35m (24.9ms)[0m  [1m[35mALTER TABLE "admin_users" ALTER COLUMN "email" TYPE character varying, ALTER COLUMN "email" SET DEFAULT '', ALTER COLUMN "email" SET NOT NULL[0m
+  ↳ db/migrate/20210112015335_change_users.rb:11
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "admin_users" DROP COLUMN "username"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "admin_users" RENAME TO "users"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mALTER INDEX "admin_users_pkey" RENAME TO "users_pkey"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "public"."admin_users_id_seq" RENAME TO "users_id_seq"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210112015335"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to TestMigration (20210108030949)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210108030949"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210108030826)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20210108030826_create_users.rb:15
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210108030826"]]
+  ↳ bin/rails:9
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210108030826)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying(25), "last_name" character varying(25), "email" character varying DEFAULT '' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210108030826_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030826"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to TestMigration (20210108030949)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210108030949"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to ChangeUsers (20210112015335)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" RENAME TO "admin_users"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mALTER INDEX "users_pkey" RENAME TO "admin_users_pkey"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "public"."users_id_seq" RENAME TO "admin_users_id_seq"[0m
+  ↳ db/migrate/20210112015335_change_users.rb:3
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "admin_users" ADD "username" character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:4
+  [1m[35m (7.2ms)[0m  [1m[35mALTER TABLE "admin_users" ALTER COLUMN "email" TYPE character varying(25)[0m
+  ↳ db/migrate/20210112015335_change_users.rb:5
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_admin_users_on_username" ON "admin_users"  ("username")[0m
+  ↳ db/migrate/20210112015335_change_users.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210112015335"]]
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20210113020645)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020645_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020645"]]
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20210113020709)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "pages" ("id" bigserial primary key, "subject_id" integer, "name" character varying, "perma_link" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_subject_id" ON "pages"  ("subject_id")[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:12
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_perma_link" ON "pages"  ("perma_link")[0m
+  ↳ db/migrate/20210113020709_create_pages.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020709"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSections (20210113020730)
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "sections" ("id" bigserial primary key, "page_id" integer, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "content-type" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210113020730_create_sections.rb:3
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_sections_on_page_id" ON "sections"  ("page_id")[0m
+  ↳ db/migrate/20210113020730_create_sections.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113020730"]]
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2287219011788025105)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Create (24.9ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "position", "visible", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Marathi"], ["position", 1], ["visible", true], ["created_at", "2021-01-13 02:49:08.764604"], ["updated_at", "2021-01-13 02:49:08.764604"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2021-02-09 08:52:30 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "rails_basics_development" does not exist
+):
+  
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.4.4) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35mSQL (29.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (16.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "admin_users" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (34.4ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" bigserial primary key, "first_name" character varying(25), "last_name" character varying(25), "email" character varying(25) DEFAULT '' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "username" character varying(25))[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_admin_users_on_username" ON "admin_users"  ("username")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "pages" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "pages" ("id" bigserial primary key, "subject_id" integer, "name" character varying, "perma_link" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_perma_link" ON "pages"  ("perma_link")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_pages_on_subject_id" ON "pages"  ("subject_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sections" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sections" ("id" bigserial primary key, "page_id" integer, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "content-type" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_sections_on_page_id" ON "sections"  ("page_id")[0m
+  ↳ db/schema.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects" CASCADE[0m
+  ↳ db/schema.rb:52
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "position" integer, "visible" boolean DEFAULT FALSE, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:52
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210113020730)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210108030826),
+(20210108030949),
+(20210112015335),
+(20210113020709),
+(20210113020645);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (24.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (17.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-09 03:31:52.627878"], ["updated_at", "2021-02-09 03:31:52.627878"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/sagar/.rvm/gems/ruby-2.6.5/bin/rake:23
