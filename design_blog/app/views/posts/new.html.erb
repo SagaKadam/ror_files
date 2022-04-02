@@ -1,0 +1,19 @@
+<h1>Add New Post</h1>
+
+<%= form_for @post do |f|%>
+    <p>
+    <%= f.label "user_id"%>
+    <br />
+    <%= f.text_field :user_id %>
+    </p>
+
+    <p>
+    <%= f.label :post_content%>
+    <br />
+    <%= f.text_field :post_content %>
+    </p>
+
+    <p>
+    <%= f.submit %>
+    </p>
+<% end %>
